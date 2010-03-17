@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.googlecode.commonspringaspects</groupId>
+    <artifactId>common-spring-aspects</artifactId>
+    <name>Common Spring Aspects</name>
+    <version>1.0.1</version>
+    <description>Commonly used Spring AOP aspects for your application</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.jamonapi</groupId>
+            <artifactId>jamon</artifactId>
+            <version>2.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.4</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>2.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>2.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>1.6.7</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.jvnet.wagon-svn</groupId>
+                <artifactId>wagon-svn</artifactId>
+                <version>1.9</version>
+            </extension>
+        </extensions>
+    </build>
+
+    <scm>
+        <connection>scm:svn:http://common-spring-aspects.googlecode.com/svn/tags/common-spring-aspects-1.0.1</connection>
+        <developerConnection>scm:svn:https://common-spring-aspects.googlecode.com/svn/tags/common-spring-aspects-1.0.1</developerConnection>
+        <url>http://code.google.com/p/common-spring-aspects/source/browse/tags/common-spring-aspects-1.0.1</url>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>googlecode</id>
+            <url>svn:https://common-spring-aspects.googlecode.com/svn/maven2</url>
+        </repository>
+    </distributionManagement>
+
+</project>
