@@ -4,7 +4,7 @@
     <groupId>com.googlecode.commonspringaspects</groupId>
     <artifactId>common-spring-aspects</artifactId>
     <name>Common Spring Aspects</name>
-    <version>1.0.2</version>
+    <version>1.0.3-SNAPSHOT</version>
     <description>Commonly used Spring AOP aspects for your application</description>
 
     <dependencies>
@@ -54,9 +54,9 @@
     </build>
 
     <scm>
-        <connection>scm:svn:http://common-spring-aspects.googlecode.com/svn/tags/common-spring-aspects-1.0.2</connection>
-        <developerConnection>scm:svn:https://common-spring-aspects.googlecode.com/svn/tags/common-spring-aspects-1.0.2</developerConnection>
-        <url>http://code.google.com/p/common-spring-aspects/source/browse/tags/common-spring-aspects-1.0.2</url>
+        <connection>scm:svn:http://common-spring-aspects.googlecode.com/svn/trunk/</connection>
+        <developerConnection>scm:svn:https://common-spring-aspects.googlecode.com/svn/trunk/</developerConnection>
+        <url>http://code.google.com/p/common-spring-aspects/source/browse/</url>
     </scm>
 
     <distributionManagement>
