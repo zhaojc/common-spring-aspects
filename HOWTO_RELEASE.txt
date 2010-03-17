@@ -3,7 +3,7 @@ How to release
 test
 # To avoid error "This client is too old to work with working copy '.'; please get a newer Subversion client" 
 cd tmp; rm -rf common-spring-aspects
-svn co https://common-spring-aspects.googlecode.com/svn/trunk/ common-spring-aspects
+svn checkout https://common-spring-aspects.googlecode.com/svn/trunk/ common-spring-aspects --username altumano
 cd common-spring-aspects
 
 mvn release:clean release:prepare
