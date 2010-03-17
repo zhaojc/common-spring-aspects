@@ -51,6 +51,13 @@
                 <version>1.9</version>
             </extension>
         </extensions>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>wagon-maven-plugin</artifactId>
+                <version>1.0-beta-3</version>
+            </plugin>
+        </plugins>
     </build>
 
     <scm>
