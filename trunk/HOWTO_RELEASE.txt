@@ -7,5 +7,5 @@ cd tmp; rm -rf common-spring-aspects
 svn checkout https://common-spring-aspects.googlecode.com/svn/trunk/ common-spring-aspects
 cd common-spring-aspects
 
-mvn release:clean release:prepare
-mvn -Dgoals=deploy release:perform
+mvn release:clean release:prepare -Dusername=altumano -Dpassword=***
+mvn -Dgoals=deploy release:perform -Dusername=altumano -Dpassword=***
