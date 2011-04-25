@@ -51,24 +51,26 @@ public class CachingAspect implements Ordered {
 
         Object value;
         String cacheKey = getCacheKey(joinPoint);
-        Element element = (Element) cache.get(cacheKey);
 
-        if (element != null) {
+        synchronized (this) {
+            Element element = (Element) cache.get(cacheKey);
 
-            value = element.getObjectValue();
+            if (element != null) {
 
-            if (LOGGER.isDebugEnabled()) {
-                LOGGER.debug("Got from cache: key = " + cacheKey + ", value = " + value);
-            }
+                value = element.getObjectValue();
 
-        } else {
+                if (LOGGER.isDebugEnabled()) {
+                    LOGGER.debug("Got from cache: key = " + cacheKey + ", value = " + value);
+                }
 
-            value = joinPoint.proceed();
+            } else {
 
-            cache.put(new Element(cacheKey, value));
+                value = joinPoint.proceed();
+                cache.put(new Element(cacheKey, value));
 
-            if (LOGGER.isDebugEnabled()) {
-                LOGGER.debug("Added to cache: key = " + cacheKey + ", value = " + value);
+                if (LOGGER.isDebugEnabled()) {
+                    LOGGER.debug("Added to cache: key = " + cacheKey + ", value = " + value);
+                }
             }
         }
         return value;
