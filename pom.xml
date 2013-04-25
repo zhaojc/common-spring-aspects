@@ -6,6 +6,12 @@
     <name>Common Spring Aspects</name>
     <version>1.0.12-SNAPSHOT</version>
     <description>Commonly used Spring AOP aspects for your application</description>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
 
     <dependencies>
         <dependency>
